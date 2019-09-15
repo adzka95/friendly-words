@@ -10,6 +10,8 @@ import {playRecord} from "../services/recordPlayer";
 import _ from "lodash";
 
 const FANFARE = [ 'fanfare1.mp3', 'fanfare2.mp3', 'fanfare3.mp3'];
+const BRAVO = [ 'brawo1.mp3', 'brawo2.mp3', 'brawo3.mp3'];
+const ENDOFTASK = [ 'konieczadania1.mp3', 'konieczadania2.mp3', 'konieczadania3.mp3'];
 
 export class SummaryScreen extends Component {
     constructor(props){
@@ -18,7 +20,9 @@ export class SummaryScreen extends Component {
 
     render(){
         let fanfare = _.sample(FANFARE);
-        playRecord ( 'konieczadania.m4a',fanfare);
+        let bravo = _.sample(BRAVO);
+        let endOfTask = _.sample(ENDOFTASK);
+        playRecord (endOfTask, bravo, fanfare);
 
         return <Layout>
             <View flex={1} alignItems={"center"} justifyContent={"center"}>
