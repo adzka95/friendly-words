@@ -15,13 +15,16 @@ import AnimatedCars from "../components/animations/AnimatedCars";
 import AnimatedChildishCars from "../components/animations/AnimatedChildishCar";
 import AnimatedBall from "../components/animations/AnimatedBall";
 import AnimatedFlower from "../components/animations/AnimatedFlower";
-import {Cool, Good, Great} from "../../android/app/src/main/res/constantStrings";
+import {Cool, Extra, Fantastic, Good, Great, Revelation} from "../../android/app/src/main/res/constantStrings";
 
 
 const REWARDS = [ AnimatedBalloons, AnimatedCars, AnimatedChildishCars, AnimatedFlower, AnimatedBall];
 const GOOD_VOICE_REWARDS = [ 'dobrze1.mp3', 'dobrze2.mp3', 'dobrze3.mp3','dobrze4.mp3'];
 const SUPER_VOICE_REWARDS = [ 'sup1.mp3', 'sup2.mp3', 'sup3.mp3','sup4.mp3'];
 const GREAT_VOICE_REWARDS = [ 'swietnie1.mp3', 'swietnie2.mp3', 'swietnie3.mp3','swietnie4.mp3','swietnie5.mp3'];
+const REVELATION_VOICE_REWARDS = [ 'rewelacja1.mp3', 'rewelacja2.mp3', 'rewelacja3.mp3','rewelacja4.mp3'];
+const FANTASTIC_VOICE_REWARDS = [ 'fantastycznie1.mp3', 'fantastycznie2.mp3', 'fantastycznie3.mp3'];
+const EXTRA_VOICE_REWARDS = [ 'ekstra1.mp3', 'ekstra2.mp3', 'ekstra3.mp3','ekstra4.mp3'];
 
 const SampleReward = () => {
   const Reward = _.sample(REWARDS);
@@ -48,6 +51,18 @@ export default class RewardScreen extends Component {
 
       case Great:
         rewardFile = _.sample(GREAT_VOICE_REWARDS);
+        break;
+
+      case Revelation:
+        rewardFile = _.sample(REVELATION_VOICE_REWARDS);
+        break;
+
+      case Fantastic:
+        rewardFile = _.sample(FANTASTIC_VOICE_REWARDS);
+        break;
+
+      case Extra:
+        rewardFile = _.sample(EXTRA_VOICE_REWARDS);
         break;
 
       default:

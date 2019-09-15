@@ -17,3 +17,6 @@ export const PlayAgain = "Zagraj ponownie";
 export const Good = "Dobrze";
 export const Great = "Świetnie";
 export const Cool = "Super";
+export const Revelation = "Rewelacja";
+export const Fantastic = "Fantastycznie";
+export const Extra = "Ekstra";
