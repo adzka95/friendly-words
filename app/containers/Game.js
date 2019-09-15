@@ -113,7 +113,8 @@ export default class Game extends Component {
 				/>;
                 break;
             case GAME_STATES.summary:
-                return <SummaryScreen onAccept={this.props.goToMainScreen}/>;
+                return <SummaryScreen onAccept={this.props.goToMainScreen}
+									  shouldReadReward={this.props.shouldReadReward}/>;
                 break;
         }
 	}

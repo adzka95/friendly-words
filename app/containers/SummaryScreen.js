@@ -8,6 +8,7 @@ import * as constants from "../../android/app/src/main/res/constantStrings";
 import {moderateScale} from "../services/scalign";
 import {playRecord} from "../services/recordPlayer";
 import _ from "lodash";
+import {speak} from "../services/speaker";
 
 const FANFARE = [ 'fanfare1.mp3', 'fanfare2.mp3', 'fanfare3.mp3'];
 const BRAVO = [ 'brawo1.mp3', 'brawo2.mp3', 'brawo3.mp3'];
@@ -22,8 +23,9 @@ export class SummaryScreen extends Component {
         let fanfare = _.sample(FANFARE);
         let bravo = _.sample(BRAVO);
         let endOfTask = _.sample(ENDOFTASK);
-        playRecord (endOfTask, bravo, fanfare);
-
+        this.props.shouldReadReward
+            ? playRecord (endOfTask, bravo, fanfare)
+            : playRecord (endOfTask, '', '');
         return <Layout>
             <View flex={1} alignItems={"center"} justifyContent={"center"}>
                 <Image resizeMode="contain" height={moderateScale(60)} source={require("../assets/images/smile.png")} />
