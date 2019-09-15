@@ -28,10 +28,12 @@ export class SummaryScreen extends Component {
             : playRecord (endOfTask, '', '');
         return <Layout>
             <View flex={1} alignItems={"center"} justifyContent={"center"}>
-                <Image resizeMode="contain" height={moderateScale(60)} source={require("../assets/images/smile.png")} />
+
                 <JumboHeader>{constants.GameOver}</JumboHeader>
-                <PlayButton onPress={this.props.onAccept}/>
+                <Image resizeMode="contain" height={moderateScale(180)} source={require("../assets/images/smile.png")} />
+                <CapriolaText/>
                 <CapriolaText>{constants.PlayAgain}</CapriolaText>
+                <PlayButton onPress={this.props.onAccept} size={100}/>
             </View>
         </Layout>
     }

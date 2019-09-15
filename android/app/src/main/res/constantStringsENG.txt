@@ -1,0 +1,18 @@
+export const AppTitle = "Friendly Words";
+export const CantLoadFile = "Unable to load the configuration file - no permission to save the file.";
+export const RestartAplication = "Restart the application and accept the request for permission.";
+export const ContactUs = "In case of problems, please contact us:";
+export const ActiveConfiguration = "Active configuration: ";
+export const Word = "Word";
+export const AppInfo = "Applications are created as part of a non-profit project of Gdańsk University of Technology and the Gdańsk Institute of Children's Assistance Development Foundation (www.iwrd.pl). As part of the project, we follow two principles: non-profit and open-source. IWRD, Gdańsk University of Technology and project participants do not receive material benefits from participation in application development.\n"+
+                        "More information about the application and the project: autyzm.eti.pg.gda.pl";
+export const TwoAppInfo = "For proper operation you need a pair of applications: Friendly Words and Friendly Words Settings. ";
+export const NonProfitProject = "Non-profit project Friendly Applications";
+export const GameOver = "Game over! ";
+export const PlayAgain = "Play again";
+export const Good = "Good";
+export const Great = "Excellent";
+export const Cool = "Super";
+export const Revelation = "Revelation";
+export const Fantastic = "Fantastic";
+export const Extra = "Extra";

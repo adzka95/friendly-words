@@ -27,7 +27,7 @@ BorderedButton.propTypes = {
 export const PlayButton = ({onPress, size = 280}) => <TouchableOpacity onPress={onPress}>
     <RoundDashedBorder size={size} padding={10} borderWidth={5} alignSelf={"center"}>
         <RoundWrapper size={size}>
-            <Icon color={colours.apple} size={150} name={"play"}/>
+            <Icon color={colours.apple} size={0.5*size} name={"play"}/>
         </RoundWrapper>
     </RoundDashedBorder>
 </TouchableOpacity>;
